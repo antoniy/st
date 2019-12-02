@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+// AUR: nerd-fonts-complete
+// InconsolataLGC - support for Cyrillic alphabet
+static char *font = "InconsolataLGC Nerd Font:pixelsize=16:antialias=true:autohint=true";
 
 static int borderpx = 2;
 
