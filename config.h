@@ -7,7 +7,7 @@
  */
 // AUR: nerd-fonts-complete
 // InconsolataLGC - support for Cyrillic alphabet
-static char *font = "InconsolataLGC Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font = "InconsolataLGC Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
 
 static int borderpx = 2;
 
@@ -86,40 +86,39 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.92;
+/* float alpha = 0.92; */
+float alpha = 1.0;
+
+/* gruvbox-dark colorscheme */
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#181818",
-  "#ab4642",
-  "#a1b56c",
-  "#f7ca88",
-  "#7cafc2",
-  "#ba8baf",
-  "#86c1b9",
-  "#d8d8d8",
-  "#585858",
-  "#ab4642",
-  "#a1b56c",
-  "#f7ca88",
-  "#7cafc2",
-  "#ba8baf",
-  "#86c1b9",
-  "#f8f8f8",
-  [255] = 0,
-  "#181818",   /* 256 -> bg */
-  "#d8d8d8",   /* 257 -> fg */
-  "#f8f8f8", /* 258 -> cursor */
+	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#cc241d",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#b16286",
+	"#689d6a",
+	"#a89984",
+	"#928374",
+	"#fb4934",
+	"#b8bb26",
+	"#fabd2f",
+	"#83a598",
+	"#d3869b",
+	"#8ec07c",
+	"#ebdbb2",
 };
 
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 258;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 0;
 
 /*
